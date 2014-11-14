@@ -1,0 +1,202 @@
+bugs:
+
+-improved logistics/construction tech isn't showing the name set in locale. the hell. 
+
+
+
+-Proper recipes for casting forge and metal furnace
+-Better colors for molten metals inside the pipes
+
+
+
+ideas:
+
+-Solar panel, maybe a chemical doping process (ant had a good idea for once)? From Dakkan, if chemicals involved, make it more beastly.
+
+-upgrade flamethrower. currently it's barely even useful for tree clearance. see where damage comes from, and upgrade *that* item. if fuel, new more difficult processing.
+-will need another level of conveyors for the new machinery, probably. verify before adding.
+-flamethrower turret? can see it being TK happy, though.
+-wooden palisades for early defense
+-steel reinforced walls for later defense
+-global effects for pollution. what should these be? make trees grow, then kill them eventually?:
+14:59 <Dakkan> We vaguely talked about it I think. Player damage without power
+               armor and stuff like that. Maybe reduced solar panel output.
+
+-recycler/compacter device:
+[14:46:18] Creodor: it...
+[14:46:33] Creodor: might be possible to do something, maybe
+[14:46:55] Hessuu: I would imagine it's possible to hardcode things at least
+[14:46:58] Creodor: i think we're limited to one output, no matter what
+[14:47:06] Hessuu: if basic inserter, give 10 iron
+[14:47:28] Creodor: as long as i'm not interfacing with the actual game engine, i can do anything lua can
+[14:47:30] Creodor: which is a lot
+[14:47:54] Creodor: and all the entities/items/etc are in lua in various places; none hardcoded
+[14:48:29] Creodor: so i should be able to at least reverse lookup the recipe from the item inserted, find the base metal of that or most common item or w/e
+[14:48:33] Creodor: and spit out some of that
+[14:49:02] Creodor: it'd be a highly inefficient recycler, but it's something
+[14:49:20] Creodor: the biggest issue is that there's nothing that outputs multiple items yet, at all
+http://www.factorioforums.com/forum/viewtopic.php?f=25&t=6603  < can do multiple outputs after all
+
+-should add new enemies before/with/shortly after new defenses and weapons. probably with or after.
+
+15:07 <Dakkan> I don't think it'd be possible yet, but eventually I'd like to
+               see trees regrow for constant battles against nature.
+15:07 <Creodor> but the minute something involves the engine...
+15:07 <Creodor> aye
+15:08 <Creodor> it would be nice
+15:08 <Creodor> you go off on a long exploration trip, come back to a base with
+                trees in the way
+15:08 <Dakkan> Specialized green blueprints for removing only trees.
+15:09 <Dakkan> So any tree appearing in the zone will be automatically removed.
+15:09 <Creodor> robots are ever-useful.
+15:09 <Creodor> can potentially already make that setup, with the robot mining
+                events
+15:09 <Creodor> which would.......
+15:10 <Creodor> i need to see if i can do that.
+15:10 <Creodor> because if so, fuck the trees forever.
+15:10 <Dakkan> Also, robot-tree-murder needs to count towards player kills of
+               trees.
+15:10 <Creodor> haha. eventually, sure
+15:10 <Creodor> but that one isn't gonna be moddable yet
+15:11 <Dakkan> Just a side thought.
+15:12 <Creodor> sure
+
+
+----
+
+15:13 <Dakkan> Also, if we're going to continue building up off of vanilla, it
+               really seems we need some sort of high density packaging system.
+               Maybe not for everything, or maybe just for one or two things.
+               But I'm just noticing this bottleneck where I'm doing silly
+               things that don't feel... game-like.
+15:13 <Creodor> examples?
+15:16 <Dakkan> Or hell, not even technically packaging, but an alternate mode
+               of processing shit. Specifically iron and copper. My
+               distribution system for the two is getting silly. A cooler, more
+               Factorio-esque scenario would be to "mass process" ~15 into
+               molten metal which could be piped instead of conveyored, and was
+               much more dense. Drawbacks would obviously include more
+               expensive initial processing, and more expensi
+15:16 <Dakkan> ve end point processing.
+15:17 <Dakkan> Unlike a conveyor, you wouldn't be able to just pull resources
+               out of the pipe, you'd need a "metal casting" stage to get
+               regular plates back out of it.
+15:19 <Dakkan> Benefits would be high density metal storage and transport.
+               Drawbacks would be high energy investment and overall cost.
+15:20 <Creodor> i like the idea, main thing i feel i'm missing is: where is
+                this intermediate casting step?
+15:20 <Creodor> is that meant to be during recipes, or at some other factory
+15:21 <Creodor> i have noticed that at higher levels iron/copper become very
+                difficult to move around efficiently though
+15:21 <Dakkan> Some sort of smeltery coverts large amounts of ore/metal plates
+               into molten metal. This is pipe-able, maybe not through
+               traditional pipes but something similar.
+15:21 <Creodor> i end up with some chains that barely use any and other that
+                are bone dry of the stuff
+--------------------------------------------------------------------------------
+15:22 <Dakkan> Then at any point you'd want to pull metal plates out of the
+               system you'd hook the pipe-esque thing into a casting building
+               to cast plates.
+15:23 <Dakkan> I usually have just strings of the 3x3 chests with 3 transporter
+               arms moving items en masse. It just doesn't feel right.
+15:23 <Creodor> and then use that to feed nearby machines...
+15:23 <Dakkan> Yeah.
+15:23 <Creodor> ant's setup. i hate it.
+15:23 <Creodor> it works faster, but i hate it
+15:23 <Dakkan> I know.
+15:23 <Creodor> it's fucking stupid
+15:23 <Creodor> also, i'm thinking that the heat transferral between pipes
+                could come into play here.
+15:23 <Dakkan> Especially at stuff like train stations when you need to get the
+               shit unloaded AND out of the way as fast as possible, it's
+               basically a requirement though.
+15:24 <Creodor> need to keep the metals at x temp, and over pipe length you
+                lose it, so have to run hot water pipes alongside sometimes
+15:24 <Dakkan> Hell, you could have the pipes require electricity to keep them
+               molten.
+15:24 <Dakkan> Ooh, that's a good idea too.
+15:24 <Creodor> i prefer hot water to electricity, but either could work
+15:24 <Dakkan> Err, not the hot water bit. That's meh.
+15:24 <Creodor> eh.
+15:25 <Dakkan> Because boiling water is still very cold in metal terms.
+15:25 <Creodor> either way, molten metal will bleed heat.
+15:25 <Creodor> yeah
+15:25 <Creodor> 's true
+15:25 <Dakkan> But this could be a reason for a few tiers of insulated pipes.
+               Each one prevents heat loss slightly better.
+15:25 <Creodor> shame, but oh well.
+15:25 <Creodor> i'd rather not have too many. but yeah, i can see that.
+15:26 <Dakkan> AND your idea of metal heating boilers to increase heat
+               occasionally.
+15:26 <Creodor> the water would have to get very hot to manage that, as you
+                pointed out
+15:27 <Creodor> at those temps i imagine the pressure would be insane
+15:27 <Dakkan> Err, nono. You have the molten metal flow through a boiler.
+               Which is not really a boiler at that point I guess.
+15:27 <Creodor> ohhhh
+15:27 <Dakkan> But a re-heater, I guess.
+15:27 <Dakkan> Because I also have insane amounts of physical fuel lying around.
+15:27 <Creodor> an actual purpose made metal-boiler
+15:28 <Dakkan> And that would be a use for it.
+15:28 <Dakkan> Thermal regulator.
+15:28 <Dakkan> We can't really call it a boiler.
+15:28 <Creodor> better name
+15:28 <Dakkan> But I'm just looking to avoid this bullshit
+               http://i.imgur.com/jwS82Jx.jpg
+15:28 <Dakkan> And those are the DyTech stupid fast arms.
+
+
+15:36 <Dakkan> This is interesting now. We can assign heat capacity to liquids.
+               So it'll require more fuel to raise the temperature more.
+15:36 <Creodor> ooohhh
+15:36 <Creodor> very good
+15:37 <Dakkan> We would need some way to "require" the output casting stage to
+               bet at a certain temperature though.
+15:37 <Creodor> i might be able to rig up something lua-magicy if necessary
+15:37 <Creodor> depends on how much i can do without talking to the engine
+15:38 <Dakkan> Dafuque. The various oils have heat capacities and max
+               temperatures too... have you ever tried to run them through a
+               boiler?
+
+---
+
+-new boiler that uses liquid oil-based fuels?
+-wind power, game already has adjustable windspeed/orientation. should be able to use that. ( http://www.factorioforums.com/wiki/index.php?title=Lua/Game )
+
+---
+
+11:08 <Creodor> heh. found a way to place trees.
+11:08 <Dakkan> Oh?
+11:09 <Creodor>  if (game.canplaceentity{name="big-tree", position = {5, 3}})
+                then
+11:09 <Creodor>      game.createentity{name="big-tree", position = {5, 3}}
+11:09 <Creodor>   end
+11:09 <Creodor> replace the position with a semi-random value
+11:09 <Dakkan> Have a clock randomly place trees in random locations a distance
+               x away from player?
+11:10 <Creodor> mhm
+11:10 <Creodor> clock based on pollution
+11:10 <Creodor> dat co2
+11:10 <Creodor> dunno how to grab pollution though, yet
+11:11 <Dakkan> I was thinking on that. There should be a peak point where a
+               little CO2 increases tree growth, but then growth declines again.
+11:11 <Creodor> yes
+11:11 <Creodor> already noted that somewhere
+11:11 <Creodor> increase growth, then start removing trees, or preferably,
+                replacing them with dead ones
+11:12 <Dakkan> Ooh, yeah. Replacing them would be great.
+11:13 <Creodor> by clock, check if entity at $position == tree then
+                entity.destroy() && game.createentity{name="dead-tree",
+                $position}
+getpollution
+Takes Lua/Position and returns Types/double of pollution for the chunk given position was in.
+
+
+
+notes:
+
+-also, construction one is giving a blueprint timeout upgrade? how?:
+      {
+        type = "ghost-time-to-live",
+        modifier = 60 * 60 * 20
+      }
