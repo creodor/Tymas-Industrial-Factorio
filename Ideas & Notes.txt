@@ -64,47 +64,6 @@ http://www.factorioforums.com/forum/viewtopic.php?f=25&t=6603  < can do multiple
 
 ----
 
-15:13 <Dakkan> Also, if we're going to continue building up off of vanilla, it
-               really seems we need some sort of high density packaging system.
-               Maybe not for everything, or maybe just for one or two things.
-               But I'm just noticing this bottleneck where I'm doing silly
-               things that don't feel... game-like.
-15:13 <Creodor> examples?
-15:16 <Dakkan> Or hell, not even technically packaging, but an alternate mode
-               of processing shit. Specifically iron and copper. My
-               distribution system for the two is getting silly. A cooler, more
-               Factorio-esque scenario would be to "mass process" ~15 into
-               molten metal which could be piped instead of conveyored, and was
-               much more dense. Drawbacks would obviously include more
-               expensive initial processing, and more expensi
-15:16 <Dakkan> ve end point processing.
-15:17 <Dakkan> Unlike a conveyor, you wouldn't be able to just pull resources
-               out of the pipe, you'd need a "metal casting" stage to get
-               regular plates back out of it.
-15:19 <Dakkan> Benefits would be high density metal storage and transport.
-               Drawbacks would be high energy investment and overall cost.
-15:20 <Creodor> i like the idea, main thing i feel i'm missing is: where is
-                this intermediate casting step?
-15:20 <Creodor> is that meant to be during recipes, or at some other factory
-15:21 <Creodor> i have noticed that at higher levels iron/copper become very
-                difficult to move around efficiently though
-15:21 <Dakkan> Some sort of smeltery coverts large amounts of ore/metal plates
-               into molten metal. This is pipe-able, maybe not through
-               traditional pipes but something similar.
-15:21 <Creodor> i end up with some chains that barely use any and other that
-                are bone dry of the stuff
---------------------------------------------------------------------------------
-15:22 <Dakkan> Then at any point you'd want to pull metal plates out of the
-               system you'd hook the pipe-esque thing into a casting building
-               to cast plates.
-15:23 <Dakkan> I usually have just strings of the 3x3 chests with 3 transporter
-               arms moving items en masse. It just doesn't feel right.
-15:23 <Creodor> and then use that to feed nearby machines...
-15:23 <Dakkan> Yeah.
-15:23 <Creodor> ant's setup. i hate it.
-15:23 <Creodor> it works faster, but i hate it
-15:23 <Dakkan> I know.
-15:23 <Creodor> it's fucking stupid
 15:23 <Creodor> also, i'm thinking that the heat transferral between pipes
                 could come into play here.
 15:23 <Dakkan> Especially at stuff like train stations when you need to get the
