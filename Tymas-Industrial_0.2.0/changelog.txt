@@ -1,0 +1,111 @@
+﻿2014-11-
+Tymas Industrial 0.2.0
+
+New Features:
+
+-New system added to convert metal plates into liquid and back, to facilitate moving large quantities of material.
+-Dakkan started updating the graphics.
+
+Bugfixes:
+
+Balance Changes:
+
+
+2014-11-13
+Tymas Industrial 0.1.2
+
+Bugfixes:
+
+-Base game changed the number of animations expected for robots and roboports, had to update my files to supply all required values.
+
+
+﻿2014-11-11
+Tymas Industrial 0.1.1
+
+Bugfixes:
+
+-Advanced Solar Panel dual recipes were both named the same thing, changed that and now that's working properly
+
+Balance Changes:
+
+-Tweaked the accumulator recipes so they cost more
+
+New Features:
+
+-High Speed Assembling Machine
+
+-Modular Assembling Machine
+
+-High Temp Electric Furnace
+
+-Modular Electric Furnace
+
+
+
+2014-11-10
+Tymas Industrial 0.1.0
+
+-Initial Release!
+
+-Quick overview of additions:
+
+Advanced Solar Panel
+
+Fast Charge Accumulator: Charges rapidly, but discharge rate is pretty slow
+
+Fast Discharge Accumulator: Discharges rapidly, but charge rate is pretty slow
+
+High Capacity Accumulator: Holds a lot more energy, but charge/discharge is very slow
+
+Advanced Steam Engine
+
+Long Range Radar: Can scan extremely far, but close in scans are extremely expensive
+
+Combat Radar: Useless for scanning new sectors, but can run realtime close in updates at low energy cost
+
+Improved Roboport
+
+Advanced Roboport
+
+Advanced Logistic Robot
+
+Advanced Construction Robot
+
+Advanced Repair Pack
+
+Medium Iron Chest
+
+Medium Steel Chest
+
+Big Iron Chest
+
+Big Steel Chest
+
+Medium Requester Chest
+
+Medium Storage Chest
+
+Medium Active Provider Chest
+
+Medium Passive Provider Chest
+
+Big Requester Chest
+
+Big Storage Chest
+
+Big Active Provider Chest
+
+Big Passive Provider Chest
+
+Medium Smart Chest
+
+Big Smart Chest
+
+Reinforced Storage Tank
+
+Fast Mining Drill: Faster mining speed
+
+Seeking Mining Drill: Larger mining radius
+
+
+Unless otherwise noted, they're simple direct upgrades over their current existing counterparts. Big/Medium chests are multi-tile and hold more.
