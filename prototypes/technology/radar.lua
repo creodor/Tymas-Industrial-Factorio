@@ -11,14 +11,15 @@ data:extend(
         recipe = "long-range-radar"
       },
     },
-    prerequisites = {"advanced-electronics"},
+    prerequisites = {"advanced-electronics-2"},
     unit =
     {
-      count = 150,
+      count = 100,
       ingredients =
       {
         {"science-pack-1", 1},
         {"science-pack-2", 1},
+        {"science-pack-3", 1},
       },
       time = 30
     },
@@ -36,14 +37,15 @@ data:extend(
         recipe = "combat-radar"
       },
     },
-    prerequisites = {"advanced-electronics"},
+    prerequisites = {"advanced-electronics-2"},
     unit =
     {
-      count = 150,
+      count = 100,
       ingredients =
       {
         {"science-pack-1", 1},
         {"science-pack-2", 1},
+        {"science-pack-3", 1},
       },
       time = 30
     },

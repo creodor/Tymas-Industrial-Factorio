@@ -1,23 +1,71 @@
-bugs:
+bug- large/medium smart chests aren't smart. check if logistics chests should be smart too.
 
--improved logistics/construction tech isn't showing the name set in locale. the hell. 
-
-
-
--Proper recipes for casting forge and metal furnace
+stbugs:
 -Better colors for molten metals inside the pipes
+-Capsule turrets, when firing drones capsules, are crashing the game, on the Tymas mod. The base files do not seem to do this. Wut.
 
+
+
+Important notes:
+-No collision box set, projectiles can't collide, at least for several tested projectile types.
+	-Flame-thrower-explosion type projectiles will not be able to collide past the weapons firing range. Likely for other types as well.
+
+
+
+Backburner problems:
+-New tier power armors, can't seem to adjust player speed.
 
 
 ideas:
+-Next tier gun: Gatling, sniper, explosive.
+-Planetary Satellite: Stupidly ranged area scanner. This is especially vital for more populated servers, but a server with Dakkan on it needs one too. (Hehe.)
+
+-Mohovian Miner (TA name inspiration (Total Annihilation, for Creodor)) AKA sub mantle metal extractor: megastructure. 
+	-Energy requirements set so high that they're not likely to be met, so total energy production dictates speed of resources ejected.
+	-Ejects massive quantities of mantle magma.
+		-Mantle Magma is processed into mostly rock, but some iron/copper. (We may want to consider a new resource at this point of the game.)
+			-This massive surplus of rock is a new game mechanic. "WUT DO WITH LOTS OF STUPID RESOURCE?" (Pave the earf, wall the earf. Do something, but you can't automate it.)
+		-There would be intense sorting needed as well for the byproducts.
+
+-Drone: Set to enemy, give weapon that does negative damage, have zero hit box (So you/defenses can't shoot at it), it heals player/player allies.
+
+-Charging tower: Trimmed down roboport specially designed to charge large amounts of drones at high charging speeds. Expensive, fuck you.
+	-Notes: Game mechanics do not allow drones to logically deciding on charging port. They choose nearest acceptable port, no matter wut.
+		-Due to this, it may be a better game mechanic to have very few charging port, but absurd charging rates. The desired effect is to charge more drones faster, so we need to account for a shitton of drones. Perhaps a high energy drain or sommat.
+
+-Injection Pumpjack
+
+-Use the destroyer attack weapon for a player weapon
+
+-Siege monster, long range but low defenses, monster countermeasure to long range missile turrets
+-Laser gun, absurd fire rate and projectile speed to give illusion of beam effect.
+
+----------------------------------------------------------
+9/12/2015 - Dakkan
+
+New Tier of gameplay to match molten metal mechanics
+	-New "Foundry" or "Casting" building, acts as new tier of assembly building for giant parts.
+		-Items too large to be held in inventory.
+			-Is it possible to increase item size on ground?
+			-Is it possible to prevent player from picking up items on ground?
+				-Could use vehicles entity category as items and set to non-mineable.
+		-Moved using "heavy conveyor belts", which are slow.
+			-If possible, these conveyors should be 2x2 instead of 1x1. We goin' biiig.
+				-currently does not appear to be possible to scale up conveyor entity.
+	-Larger moving arm for moving from conveyor to destination.
+		
+
+----------------------------------------------------------------
+
+tweak adv steam engine; uses no extra temp and could substitute directly without upgrading water
 
 -Solar panel, maybe a chemical doping process (ant had a good idea for once)? From Dakkan, if chemicals involved, make it more beastly.
 
 -upgrade flamethrower. currently it's barely even useful for tree clearance. see where damage comes from, and upgrade *that* item. if fuel, new more difficult processing.
 -will need another level of conveyors for the new machinery, probably. verify before adding.
 -flamethrower turret? can see it being TK happy, though.
--wooden palisades for early defense
--steel reinforced walls for later defense
+(DONE)-wooden palisades for early defense
+(DONE)-steel reinforced walls for later defense
 -global effects for pollution. what should these be? make trees grow, then kill them eventually?:
 14:59 <Dakkan> We vaguely talked about it I think. Player damage without power
                armor and stuff like that. Maybe reduced solar panel output.
@@ -150,12 +198,24 @@ http://www.factorioforums.com/forum/viewtopic.php?f=25&t=6603  < can do multiple
 getpollution
 Takes Lua/Position and returns Types/double of pollution for the chunk given position was in.
 
+-
+05:49 PM - Laguna: Could make a high end generator. Fusion - Like a 3 step process or something where you take gas and refine it into liquid hydrogen, and then pump that into a plasma factory, and that into a reactor
+05:50 PM - Laguna: makes massive power, but takes a lot of input.
+
+---
+12:32 PM - Hessuu: what this game needs is some kind of alert generator
+12:32 PM - Hessuu: that reacts to things like mines running out and chests getting emptied
 
 
 notes:
+
+-balance: will aim for production of 2-4 time better than current top tier, with commiserate cost increase. Err towards costing more rather than less than needed, but try not to go overboard. People will be happy to see cost drop, even if it was too expensive before but angry if it increases.
 
 -also, construction one is giving a blueprint timeout upgrade? how?:
       {
         type = "ghost-time-to-live",
         modifier = 60 * 60 * 20
       }
+
+	  
+-fast_replaceable_group = "storage-tanks", needs to be added in for some vanilla recipes

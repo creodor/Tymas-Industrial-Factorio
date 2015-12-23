@@ -7,7 +7,7 @@ data:extend(
     icon = "__Tymas-Industrial__/graphics/icons/radar-long-range.png",
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "long-range-radar"},
-    max_health = 600,
+    max_health = 300,
     corpse = "big-remnants",
     resistances =
     {
@@ -20,8 +20,9 @@ data:extend(
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	fast_replaceable_group =  "radar",
     energy_per_sector = "18MJ",
-    max_distance_of_sector_revealed = 45,
-    energy_per_nearby_scan = "1000kJ",
+    max_distance_of_sector_revealed = 40,
+    max_distance_of_nearby_sector_revealed = 1,
+    energy_per_nearby_scan = "1MJ",
     energy_source =
     {
       type = "electric",
@@ -30,7 +31,7 @@ data:extend(
     energy_usage = "1MW",
     pictures =
     {
-      filename = "__Tymas-Industrial__/graphics/entity/radar/radar-4.png",
+      filename = "__Tymas-Industrial__/graphics/entity/radar/long-range-radar.png",
       priority = "low",
       width = 153,
       height = 131,
@@ -56,7 +57,7 @@ data:extend(
     icon = "__Tymas-Industrial__/graphics/icons/radar-combat.png",
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "combat-radar"},
-    max_health = 600,
+    max_health = 300,
     corpse = "big-remnants",
     resistances =
     {
@@ -69,8 +70,9 @@ data:extend(
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	fast_replaceable_group =  "radar",
     energy_per_sector = "100kJ",
-    max_distance_of_sector_revealed = 1,
-    energy_per_nearby_scan = "100kJ",
+    max_distance_of_sector_revealed = 7,
+    max_distance_of_nearby_sector_revealed = 7,
+    energy_per_nearby_scan = "500kJ",
     energy_source =
     {
       type = "electric",
@@ -79,7 +81,7 @@ data:extend(
     energy_usage = "200kW",
     pictures =
     {
-      filename = "__Tymas-Industrial__/graphics/entity/radar/radar-4.png",
+      filename = "__Tymas-Industrial__/graphics/entity/radar/combat-radar.png",
       priority = "low",
       width = 153,
       height = 131,

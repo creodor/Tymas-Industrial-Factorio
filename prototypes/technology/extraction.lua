@@ -12,22 +12,30 @@ data:extend(
       },
       {
         type = "unlock-recipe",
+        recipe = "fast-mining-drill-upgrade"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "seek-mining-drill"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "seek-mining-drill-upgrade"
+      },
     },
-    prerequisites = {"steel-processing", "oil-processing"},
+    prerequisites = {"steel-processing", "advanced-electronics-2"},
     unit =
     {
-      count = 200,
+      count = 150,
       ingredients =
       {
         {"science-pack-1", 1},
         {"science-pack-2", 1},
         {"science-pack-3", 1},
       },
-      time = 15
+      time = 20
     },
-    order = "m-2"
+    order = "m-3"
   },
 }
 )

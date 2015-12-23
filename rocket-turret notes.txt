@@ -1,0 +1,12 @@
+recipe costs	(Not set yet)
+research costs	(No research required yet)
+
+			Default				Currently Set
+Rotation speed		.015				.045
+open/close speed (Think annihilation cannon of TA)	
+		prep = .08 fold = .08			.24 .24
+
+attacking speed		.5				100
+range			17				60
+Damage multiplier 	2				10
+speed 			3				.6

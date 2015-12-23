@@ -1,0 +1,16 @@
+generateeventname(...)
+geteventhandler(...)
+gettileproperties(...)
+load(...)
+onevent(...)
+oninit(...)
+onsave(...)
+onload(...)
+raiseevent(...)
+regenerateentity(...)
+removeofflineplayers(...)
+save(...)
+
+players [R]
+windoworientation [RW]
+windoworientationchagne [RW]

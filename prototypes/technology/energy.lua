@@ -12,13 +12,13 @@ data:extend(
       },
       {
         type = "unlock-recipe",
-        recipe = "adv-solar-panel-alt"
+        recipe = "adv-solar-panel-upgrade"
       }
     },
     prerequisites = {"solar-energy"},
     unit =
     {
-      count = 250,
+      count = 200,
       ingredients =
       {
         {"science-pack-1", 1},
@@ -27,7 +27,7 @@ data:extend(
       },
       time = 30
     },
-    order = "a-h-c",
+    order = "a-h-d",
   },
   {
     type = "technology",
@@ -48,10 +48,10 @@ data:extend(
         recipe = "high-cap-accumulator"
       }
     },
-    prerequisites = {"electric-energy-accumulators-1"},
+    prerequisites = {"electric-energy-accumulators-1", "electric-energy-distribution-2"},
     unit =
     {
-      count = 250,
+      count = 200,
       ingredients =
       {
         {"science-pack-1", 1},
@@ -60,23 +60,27 @@ data:extend(
       },
       time = 30
     },
-    order = "c-e-a",
+    order = "c-e-b",
   },
   {
     type = "technology",
     name = "adv-steam",
-    icon = "__Tymas-Industrial__/graphics/technology/energy.png",
+    icon = "__Tymas-Industrial__/graphics/technology/adv-steam.png",
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "adv-steam-engine"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "adv-steam-engine-upgrade"
+      },
     },
-    prerequisites = {"oil-processing"},
+    prerequisites = {"steel-processing", "electric-energy-distribution-1"},
     unit =
     {
-      count = 75,
+      count = 200,
       ingredients =
       {
         {"science-pack-1", 2},
@@ -84,7 +88,7 @@ data:extend(
       },
       time = 60
     },
-    order = "b-2",
+    order = "b-3",
 	upgrade = true,
   },
 }

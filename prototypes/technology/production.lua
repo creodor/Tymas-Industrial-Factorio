@@ -12,13 +12,21 @@ data:extend(
       },
       {
         type = "unlock-recipe",
+        recipe = "high-speed-assembling-machine-upgrade"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "modular-assembling-machine"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "modular-assembling-machine-upgrade"
       }
     },
-    prerequisites = {"automation-3"},
+    prerequisites = {"automation-3", "advanced-electronics-2"},
     unit =
     {
-      count = 200,
+      count = 350,
       ingredients = 
 	  {
         {"science-pack-1", 1},
@@ -27,7 +35,7 @@ data:extend(
 	  },
       time = 60
     },
-    order = "a-b-d",
+    order = "a-b-e",
 	upgrade = true
   },
   {
@@ -43,13 +51,21 @@ data:extend(
       },
       {
         type = "unlock-recipe",
+        recipe = "high-temp-electric-furnace-upgrade"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "modular-electric-furnace"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "modular-electric-furnace-upgrade"
+      },
     },
-    prerequisites = {"advanced-material-processing-2"},
+    prerequisites = {"advanced-material-processing-2", "advanced-electronics-2"},
     unit =
     {
-      count = 200,
+      count = 350,
       ingredients =
       {
         {"science-pack-1", 1},
@@ -58,7 +74,7 @@ data:extend(
       },
       time = 30
     },
-    order = "c-c-c",
+    order = "c-c-d",
 	upgrade = true
   },
 }

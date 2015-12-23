@@ -1,3 +1,5 @@
+data.raw["mining-drill"]["basic-mining-drill"].fast_replaceable_group = "mining-drill"
+
 data:extend(
 {
   {
@@ -9,7 +11,7 @@ data:extend(
     max_health = 350,
     resource_categories = {"basic-solid"},
     corpse = "big-remnants",
-	fast_replaceable_group =  "drill",
+	fast_replaceable_group =  "mining-drill",
     collision_box = {{ -1.4, -1.4}, {1.4, 1.4}},
     selection_box = {{ -1.5, -1.5}, {1.5, 1.5}},
     working_sound =
@@ -72,7 +74,7 @@ data:extend(
 		run_mode = "forward-then-backward",
       }
     },
-    mining_speed = 1.25,
+    mining_speed = 1.5,
     energy_source =
     {
       type = "electric",
@@ -80,11 +82,16 @@ data:extend(
       emissions = 0.45 / 2.5,
       usage_priority = "secondary-input",
     },
-    energy_usage = "180kW",
+    energy_usage = "270kW",
     mining_power = 4,
     resource_searching_radius = 3.49,
     vector_to_place_result = {0, -1.85},
-    module_slots = 1,
+    module_specification =
+    {
+      module_slots = 3,
+      module_info_icon_shift = {0, 0.8}
+    },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	radius_visualisation_picture =
     {
       filename = "__Tymas-Industrial__/graphics/entity/mining-drill/z-mining-drill-radius-visualization.png",
@@ -101,7 +108,7 @@ data:extend(
     max_health = 350,
     resource_categories = {"basic-solid"},
     corpse = "big-remnants",
-	fast_replaceable_group =  "drill",
+	fast_replaceable_group =  "mining-drill",
     collision_box = {{ -1.4, -1.4}, {1.4, 1.4}},
     selection_box = {{ -1.5, -1.5}, {1.5, 1.5}},
     working_sound =
@@ -172,11 +179,16 @@ data:extend(
       emissions = 0.45 / 2.5,
       usage_priority = "secondary-input",
     },
-    energy_usage = "180kW",
+    energy_usage = "270kW",
     mining_power = 4,
     resource_searching_radius = 4.49,
     vector_to_place_result = {0, -1.85},
-    module_slots = 1,
+    module_specification =
+    {
+      module_slots = 3,
+      module_info_icon_shift = {0, 0.8}
+    },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	radius_visualisation_picture =
     {
       filename = "__Tymas-Industrial__/graphics/entity/mining-drill/z-mining-drill-radius-visualization.png",

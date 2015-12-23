@@ -7,10 +7,9 @@ data:extend(
     energy_required = 25,
     ingredients =
     {
-
-      {"steel-plate", 80},
-      {"iron-gear-wheel", 10},
-      {"processing-unit", 5},
+      {"advanced-circuit", 5},
+      {"iron-gear-wheel", 5},
+      {"steel-plate", 10}
     },
     result = "long-range-radar"
   },
@@ -21,10 +20,9 @@ data:extend(
     energy_required = 25,
     ingredients =
     {
-
-      {"steel-plate", 80},
-      {"iron-gear-wheel", 40},
-      {"processing-unit", 5},
+      {"advanced-circuit", 3},
+      {"iron-gear-wheel", 30},
+      {"steel-plate", 10}
     },
     result = "combat-radar"
   },

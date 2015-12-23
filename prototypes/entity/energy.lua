@@ -1,3 +1,7 @@
+data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
+data.raw["accumulator"]["basic-accumulator"].fast_replaceable_group = "accumulator"
+data.raw["generator"]["steam-engine"].fast_replaceable_group = "steam-engine"
+
 data:extend(
 {
   {
@@ -7,13 +11,14 @@ data:extend(
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "adv-solar-panel"},
     max_health = 100,
+	fast_replaceable_group = "solar-panel",
     corpse = "big-remnants",
     collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     energy_source =
     {
       type = "electric",
-      usage_priority = "primary-output"
+      usage_priority = "solar"
     },
     picture =
     {
@@ -32,13 +37,14 @@ data:extend(
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "fast-c-accumulator"},
     max_health = 150,
+	fast_replaceable_group = "accumulator",
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "15MJ",
+      buffer_capacity = "20MJ",
       usage_priority = "terciary",
       input_flow_limit = "1500kW",
       output_flow_limit = "400kW"
@@ -96,15 +102,16 @@ data:extend(
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "fast-d-accumulator"},
     max_health = 150,
+	fast_replaceable_group = "accumulator",
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "15MJ",
+      buffer_capacity = "20MJ",
       usage_priority = "terciary",
-      input_flow_limit = "400kW",
+      input_flow_limit = "450kW",
       output_flow_limit = "1500kW"
     },
     picture =
@@ -160,16 +167,17 @@ data:extend(
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "high-cap-accumulator"},
     max_health = 175,
+	fast_replaceable_group = "accumulator",
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "35MJ",
+      buffer_capacity = "50MJ",
       usage_priority = "terciary",
-      input_flow_limit = "350kW",
-      output_flow_limit = "350kW"
+      input_flow_limit = "400kW",
+      output_flow_limit = "400kW"
     },
     picture =
     {
@@ -227,10 +235,10 @@ also, maybe some new boiler that requires a specific fuel?
     icon = "__Tymas-Industrial__/graphics/icons/steam-engine-adv.png",
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "adv-steam-engine"},
-    max_health = 300,
+    max_health = 350,
     corpse = "big-remnants",
     effectivity = 3,
-    fluid_usage_per_tick = 0.11,
+    fluid_usage_per_tick = 0.12,
     resistances = 
     {
       {

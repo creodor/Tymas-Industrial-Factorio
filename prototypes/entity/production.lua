@@ -6,9 +6,9 @@ data:extend(
     icon = "__Tymas-Industrial__/graphics/icons/assembling-machine-high-speed.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "high-speed-assembling-machine"},
-    max_health = 500,
+    max_health = 350,
     corpse = "big-remnants",
-    dying_explosion = "huge-explosion",
+    dying_explosion = "big-explosion",
     resistances = 
     {
       {
@@ -67,16 +67,20 @@ data:extend(
       shift = {0.84, -0.09}
     },
     crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid"},
-    crafting_speed = 2,
+    crafting_speed = 2.25,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions = 0.04 / 3.5
     },
-    energy_usage = "300kW",
-    ingredient_count = 4,
-    module_slots = 4,
+    energy_usage = "500kW",
+    ingredient_count = 6,
+    module_specification =
+    {
+      module_slots = 4,
+      module_info_icon_shift = {0, 0.8}
+    },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
   {
@@ -85,9 +89,9 @@ data:extend(
     icon = "__Tymas-Industrial__/graphics/icons/assembling-machine-modular.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "modular-assembling-machine"},
-    max_health = 500,
+    max_health = 350,
     corpse = "big-remnants",
-    dying_explosion = "huge-explosion",
+    dying_explosion = "big-explosion",
     resistances = 
     {
       {
@@ -146,16 +150,20 @@ data:extend(
       shift = {0.84, -0.09}
     },
     crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid"},
-    crafting_speed = 1.5,
+    crafting_speed = 1.75,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions = 0.04 / 3.5
     },
-    energy_usage = "300kW",
-    ingredient_count = 4,
-    module_slots = 8,
+    energy_usage = "500kW",
+    ingredient_count = 6,
+    module_specification =
+    {
+      module_slots = 6,
+      module_info_icon_shift = {0, 0.8}
+    },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
 
@@ -167,9 +175,9 @@ data:extend(
     icon = "__Tymas-Industrial__/graphics/icons/electric-furnace-high-temp.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "high-temp-electric-furnace"},
-    max_health = 500,
+    max_health = 250,
     corpse = "big-remnants",
-    dying_explosion = "huge-explosion",
+    dying_explosion = "big-explosion",
     light = {intensity = 1, size = 10},
     resistances = 
     {
@@ -180,11 +188,16 @@ data:extend(
     },
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    module_slots = 2,
+    module_specification =
+    {
+      module_slots = 2,
+      module_info_icon_shift = {0, 0.8}
+    },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"smelting"},
     result_inventory_size = 1,
-    crafting_speed = 6,
-    energy_usage = "300kW",
+    crafting_speed = 5,
+    energy_usage = "450kW",
     source_inventory_size = 1,
     energy_source =
     {
@@ -258,9 +271,9 @@ data:extend(
     icon = "__Tymas-Industrial__/graphics/icons/electric-furnace-modular.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "modular-electric-furnace"},
-    max_health = 500,
+    max_health = 250,
     corpse = "big-remnants",
-    dying_explosion = "huge-explosion",
+    dying_explosion = "big-explosion",
     light = {intensity = 1, size = 10},
     resistances = 
     {
@@ -271,11 +284,16 @@ data:extend(
     },
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    module_slots = 5,
+    module_specification =
+    {
+      module_slots = 4,
+      module_info_icon_shift = {0, 0.8}
+    },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"smelting"},
     result_inventory_size = 1,
     crafting_speed = 4,
-    energy_usage = "300kW",
+    energy_usage = "350kW",
     source_inventory_size = 1,
     energy_source =
     {

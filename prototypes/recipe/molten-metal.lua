@@ -130,9 +130,10 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"electronic-circuit", 3},
-      {"iron-gear-wheel", 5},
-      {"iron-plate", 9}
+      {"advanced-circuit", 3},
+      {"pipe", 15},
+      {"steel-plate", 10},
+      {"stone-brick", 15}
     },
     result = "casting-forge"
   },
@@ -142,9 +143,10 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"electronic-circuit", 3},
-      {"iron-gear-wheel", 5},
-      {"iron-plate", 9}
+      {"advanced-circuit", 3},
+      {"pipe", 15},
+      {"steel-plate", 10},
+	  {"stone-brick", 15}
     },
     result = "melting-furnace"
   },

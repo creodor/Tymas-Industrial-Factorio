@@ -1,14 +1,95 @@
-﻿2014-11-
+2015-09-
+Tymas Industrial 0.3.0
+
+New Features:
+-Wood Walls (Palisades) and Gates available from the start as a fast defense and marking tool
+-Reinforced Concrete Walls and Gates available for late game defense
+-Rocket Turrets available as a late game defense
+-Cannon Turrets available as a mid to late game defense
+-Enemies from Dakkan's Tymas Monsters are added in now. Bigger, tougher foes: be ready
+-Recipe to turn raw wood into coal
+
+Balance:
+-Increased the number of charging ports on Improved and Advanced Roboports
+-It was previously possible to break the very laws governing the universe by using productivity modules in molten metal machines, now it isn't
+
+Bugfixes:
+-Advanced construction robots should now use advanced repair packs correctly
+
+2015-09-15
+Tymas Industrial 0.2.6
+
+New Features:
+-Updated graphics for most custom entities, with matching technology and crafting icons
+
+Balance:
+-Updated accumulator input/output values so that they'll actually fill/empty fully
+
+Bugfixes:
+-Fixed certain module accepting devices so that they have a proper list of accepted modules
+
+2015-09-13
+Tymas Industrial 0.2.5
+
+Balance:
+-Updated modular furnace to use less power; previously the high temp furnace was just simply better.
+
+Bugfixes:
+-Updated Advanced Solar Panels so that they will work again
+-Updated everything that accepted modules to work again
+
+New Features
+-Enabled fast replace mechanisms for accumulators, solar panels, steam engines and mining drills
+
+2015-07-18
+Tymas Industrial 0.2.4
+
+Balance:
+-Modified combat radar to have a slightly higher scan range
+
+Bugfixes:
+-Replaced calls for huge-explosion with the new big-explosion value
+-Updated storage tanks to handle new logic system changes
+
+2015-03-20
+Tymas Industrial 0.2.3
+
+Bugfixes:
+-Updated the new radar entities to support the new property
+
+2015-02-16
+Tymas Industrial 0.2.2
+
+Bugfixes:
+-Modular Furnace module count from 3.5 to 4
+-Added working sound line to construction robot
+
+﻿2014-12-05
+Tymas Industrial 0.2.1
+
+Balance Changes:
+-Updated the assembling machines to match the updated vanilla balance.
+
+2014-11-22
 Tymas Industrial 0.2.0
 
 New Features:
 
 -New system added to convert metal plates into liquid and back, to facilitate moving large quantities of material.
--Dakkan started updating the graphics.
+-Added upgrade variant recipes for some entities.
+-Dakkan started updating the graphics; liquid metals have custom graphics now.
+-New graphics for solar panels.
+-New graphics for storage tanks.
+-Added descriptions for several entities, items, and technologies.
 
 Bugfixes:
 
 Balance Changes:
+-Energy components rebalanced to match new baseline.
+-Extraction components rebalanced to match new baseline.
+-Production components rebalanced to match new baseline.
+-Radar components rebalanced to match new baseline.
+-Robotics components rebalanced to match new baseline.
 
 
 2014-11-13

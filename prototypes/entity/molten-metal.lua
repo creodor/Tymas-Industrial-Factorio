@@ -6,9 +6,9 @@ data:extend(
     icon = "__Tymas-Industrial__/graphics/icons/melting-furnace.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "melting-furnace"},
-    max_health = 500,
+    max_health = 350,
     corpse = "big-remnants",
-    dying_explosion = "huge-explosion",
+    dying_explosion = "big-explosion",
     resistances = 
     {
       {
@@ -72,12 +72,16 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = 0.04 / 3.5
+      emissions = 0.08 / 3.5
     },
-    energy_usage = "300kW",
-    ingredient_count = 4,
-    module_slots = 4,
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"}
+    energy_usage = "350kW",
+    ingredient_count = 1,
+	module_specification =
+    {
+      module_slots = 2,
+      module_info_icon_shift = {0, 0.8}
+    },
+    allowed_effects = {"consumption", "speed", "pollution"}
   },
   {
     type = "assembling-machine",
@@ -85,9 +89,9 @@ data:extend(
     icon = "__Tymas-Industrial__/graphics/icons/casting-forge.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "casting-forge"},
-    max_health = 500,
+    max_health = 350,
     corpse = "big-remnants",
-    dying_explosion = "huge-explosion",
+    dying_explosion = "big-explosion",
     resistances = 
     {
       {
@@ -151,12 +155,16 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = 0.04 / 3.5
+      emissions = 0.08 / 3.5
     },
-    energy_usage = "300kW",
-    ingredient_count = 4,
-    module_slots = 4,
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"}
+    energy_usage = "350kW",
+    ingredient_count = 1,
+    module_specification =
+    {
+      module_slots = 2,
+      module_info_icon_shift = {0, 0.8}
+    },
+    allowed_effects = {"consumption", "speed", "pollution"}
   },
 }
 )
